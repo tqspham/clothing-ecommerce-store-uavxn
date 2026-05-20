@@ -1,0 +1,9 @@
+DROP TABLE IF EXISTS clothing_ecommerce_store_uavxn_order_items;
+DROP TABLE IF EXISTS clothing_ecommerce_store_uavxn_orders;
+DROP TABLE IF EXISTS clothing_ecommerce_store_uavxn_cart_items;
+DROP TABLE IF EXISTS clothing_ecommerce_store_uavxn_carts;
+DROP TABLE IF EXISTS clothing_ecommerce_store_uavxn_shipping_addresses;
+DROP TABLE IF EXISTS clothing_ecommerce_store_uavxn_product_variants;
+DROP TABLE IF EXISTS clothing_ecommerce_store_uavxn_products;
+DROP TABLE IF EXISTS clothing_ecommerce_store_uavxn_users;
+DROP TABLE IF EXISTS clothing_ecommerce_store_uavxn_categories;
