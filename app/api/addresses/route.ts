@@ -1,6 +1,5 @@
 import { supabase } from '@/lib/supabase';
 import { auth } from '@/auth';
-import { v4 as uuidv4 } from 'uuid';
 
 export async function GET() {
   try {
@@ -48,7 +47,6 @@ export async function POST(request: Request) {
     const { data: address, error } = await supabase
       .from('clothing_ecommerce_store_uavxn_shipping_addresses')
       .insert({
-        id: uuidv4(),
         user_id: session.user.id,
         full_name: fullName,
         email,

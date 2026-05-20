@@ -1,6 +1,5 @@
 import { supabase } from '@/lib/supabase';
 import bcrypt from 'bcryptjs';
-import { v4 as uuidv4 } from 'uuid';
 
 export async function POST(request: Request) {
   try {
@@ -30,11 +29,10 @@ export async function POST(request: Request) {
     // Hash password
     const passwordHash = await bcrypt.hash(password, 10);
 
-    // Create user
+    // Create user with explicit UUID
     const { data: user, error } = await supabase
       .from('clothing_ecommerce_store_uavxn_users')
       .insert({
-        id: uuidv4(),
         email,
         password_hash: passwordHash,
       })
